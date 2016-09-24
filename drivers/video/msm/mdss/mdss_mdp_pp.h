@@ -158,6 +158,8 @@ struct mdss_pp_res_type {
 	struct pp_sts_type pp_disp_sts[MDSS_BLOCK_DISP_NUM];
 	/* physical info */
 	struct pp_hist_col_info *dspp_hist;
+	struct mdp_pcc_cfg_data raw_pcc_disp_cfg[MDSS_BLOCK_DISP_NUM];
+	struct mdp_pcc_cfg_data user_pcc_disp_cfg[MDSS_BLOCK_DISP_NUM];
 	/*
 	 * The pp_data_v1_7 will be a pointer to newer MDP revisions of the
 	 * pp_res, which will hold the cfg_payloads of each feature in a single
